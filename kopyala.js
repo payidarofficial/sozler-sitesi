@@ -1,7 +1,7 @@
 function kopyala(element) {
 	var $temp = $("<input>");
-	$(&quot;body&quot;).append($temp);
+	$("body").append($temp);
 	$temp.val($(element).text()).select();
-	document.execCommand(&quot;copy&quot;);
+	document.execCommand("copy");
 	$temp.remove();
 }
